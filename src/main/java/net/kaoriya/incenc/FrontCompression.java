@@ -33,6 +33,7 @@ public class FrontCompression {
                 b.append(s)
                  .append(ASCII_RS);
             }
+            prev = s;
         }
         return b.toString();
     }
