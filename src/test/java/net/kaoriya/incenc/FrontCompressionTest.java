@@ -7,7 +7,7 @@ public class FrontCompressionTest
 {
 
     public void checkCompress(String[] array, String exp) {
-        String s = FrontCompression.Compress(array);
+        String s = FrontCompression.compress(array);
         assertNotNull(s);
         assertEquals(exp, s);
     }
@@ -52,7 +52,7 @@ public class FrontCompressionTest
     }
 
     public void checkDecompress(String s, String[] exp) {
-        String[] array = FrontCompression.Decompress(s);
+        String[] array = FrontCompression.decompress(s);
         assertNotNull(array);
         assertArrayEquals(exp, array);
     }

@@ -10,7 +10,7 @@ public class FrontCompression {
     /**
      * Compress array of strings to a string with simple front compression.
      */
-    public static String Compress(String[] strs) {
+    public static String compress(String[] strs) {
         // Check argument.
         if (strs == null) {
             return null;
@@ -55,7 +55,7 @@ public class FrontCompression {
     /**
      * Decompress array of strings from a string by simple front compression.
      */
-    public static String[] Decompress(String s) {
+    public static String[] decompress(String s) {
         ArrayList<String> a = new ArrayList<>();
         int prev_start = 0, prev_end = -1;
         StringBuilder prev = new StringBuilder();
